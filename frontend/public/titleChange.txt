@@ -1,0 +1,47 @@
+To change the title of each page in a React.js application, you can use the react-helmet library. This library allows you to manage the document head, including the page title, from within your components.
+
+Steps to Change Page Titles
+Install react-helmet: Run the following command in your project directory:
+
+bash
+Copy code
+npm install react-helmet
+Use Helmet Component: In each page component, use the Helmet component to set the title. Here's how you can do it:
+
+Example: Setting the Page Title
+1. Home.js
+javascript
+Copy code
+import React from 'react';
+import { Helmet } from 'react-helmet';
+
+const Home = () => {
+    return (
+        <div>
+            <Helmet>
+                <title>Home - ProjectFlowFinder</title>
+            </Helmet>
+            <h1>Welcome to Home Page</h1>
+        </div>
+    );
+};
+
+export default Home;
+2. About.js
+javascript
+Copy code
+import React from 'react';
+import { Helmet } from 'react-helmet';
+
+const About = () => {
+    return (
+        <div>
+            <Helmet>
+                <title>About Us - ProjectFlowFinder</title>
+            </Helmet>
+            <h1>About Our Project</h1>
+        </div>
+    );
+};
+
+export default About;

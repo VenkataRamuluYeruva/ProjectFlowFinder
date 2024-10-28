@@ -1,0 +1,86 @@
+/* General Container Settings */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.container-header {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* Content Container */
+.container-content {
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+}
+
+/* Sidebar (Left Content) */
+.content-left {
+    position: relative;
+    width:20%;
+    height: 100%;
+    background-color: #001F3F;
+    transition: width 0.3s ease;
+    border-right: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: rgba(255, 255, 255, 1) -1px 0px 5px;
+}
+
+.content-left.collapsed {
+    width: 20px;
+}
+
+.content-left .sp {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 3px;
+    margin-left:-8px;
+    margin-top: 10px;
+}
+
+.content-left span:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;
+    background-color: #003972;
+}
+
+.content-left.collapsed span {
+    background-color: #003972;
+    border-radius: 50%;
+    padding: 2px;
+    margin-left: -10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;
+}
+
+
+/* Responsive Styles for Mobile */
+@media (max-width: 700px) {
+    .container-content {
+        flex-direction: column;
+    }
+    .container-header{
+        flex-direction: column;
+        width: 100%;
+    }
+    .content-left {
+        width: 15px;
+        height: auto;
+        display: none;
+    }
+    .content-left.collapsed span {
+        margin-left: -10px;
+    }
+
+    
+}

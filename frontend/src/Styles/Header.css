@@ -1,0 +1,200 @@
+/* Header Left Section */
+.header-left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-title {
+    text-align: center;
+    margin-left: 15px;
+}
+
+.title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.project {
+    color: #00274D; /* Navy Blue */
+    font-family: 'Merriweather', serif;
+}
+
+.flow {
+    color: #00B140; /* Green */
+    font-family: 'Pacifico', cursive;
+}
+
+.finder {
+    color: #7D7D7D; /* Gray */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-left .nav-links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 5px;
+    width: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Roboto", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+li span {
+    margin-top: 3px;
+}
+
+li button {
+    background-color: #001F3F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Header Right Section */
+.header-right {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.search-input {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search-input input {
+    width: 100%;
+    margin-top: 5px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 10px;
+    outline: none;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    margin-top: 6px;
+}
+
+.profile .Notifications,
+.profile .information,
+.profile .profile-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    padding: 3px;
+    font-size: 14px;
+}
+
+.profile .profile-photo {
+    background-color: rgb(3, 3, 158);
+    color: white;
+}
+
+.profile-photo:hover {
+    background-color: #636363;
+}
+
+.Notifications:hover,
+.information:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    background-color: #b0b0b0;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 700px) {
+    /* Adjust header sections */
+    .header-left {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .header-right{
+        width: 100%;
+        justify-content: center;
+    }
+    .title {
+        font-size:25px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Nav Links */
+    .header-left .nav-links ul {
+        flex-direction:row;
+        padding: 0;
+        margin: 5px 0;
+    }
+
+    ul li {
+        width: auto;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    li button {
+        padding: 4px 8px;
+        font-size: 13px;
+    }
+
+    /* Search Input */
+    .search-input {
+        width: 80%;
+        margin-top: 5px;
+    }
+
+    .search-input input {
+        height: 25px;
+        font-size: 14px;
+    }
+
+    /* Profile Icons */
+    .profile {
+        width: 60%;
+        margin-top: 10px;
+    }
+
+    .profile .Notifications,
+    .profile .information,
+    .profile .profile-photo {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+}

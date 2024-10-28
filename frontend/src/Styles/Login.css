@@ -1,0 +1,251 @@
+.page-container {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(23, 43, 77);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Ensure row alignment */
+    justify-content: center;
+    align-items: stretch; /* Stretch elements to match height */
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+    gap: 20px; /* Optional: adds space between the elements */
+}
+.login-image-container, 
+.signup-image-container {
+    width: 50%; /* Adjust width to 50% to ensure two elements fit in a row */
+    height: 100%;
+}
+.login-image-container .login-image,.signup-image-container .signup-image{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+
+}
+.login-image img,.signup-image img{
+    width: 95%;
+    height: 100%;
+    object-fit:fill;
+}
+.login-form-container, 
+.signup-form-container {
+    width: 50%; /* Adjust width to 50% to ensure two elements fit in a row */
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.login-form-container .form-header,.signup-form-container .form-header{
+    height:fit-content;
+}
+.title-container {
+    text-align: center;
+}
+
+.title {
+    font-size: 25px;
+    margin: 0;
+}
+
+.project {
+    color: #00274D; /* Navy Blue */
+    font-family: 'Merriweather', serif;
+}
+
+.flow {
+    color: #00B140; /* Green */
+    font-family: 'Pacifico', cursive;
+}
+
+.finder {
+    color: #7D7D7D; /* Gray */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-header p{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.login-form-container .form-body,.signup-form-container .form-body{
+    width: 100%;
+    height:fit-content;
+}
+.form-body form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+form .form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 7px 0px;
+}
+.form-box{
+    display: flex;
+    flex-direction: column;
+}
+.form-box label{
+    font-size: 16px;
+    margin-bottom:3px;
+}
+.form-box input{
+    padding: 10px;
+    border: 1px solid rgb(0,0,0,0.5);
+    border-radius: 5px;
+    outline: none;
+}
+.form-box input:focus{
+    border: 2px solid rgb(35, 164, 143);
+}
+.field-error p{
+    color: red;
+    font-size: 13px;
+}
+.form-group .password-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center ;
+    margin-top: 10px;
+}
+.show-password{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.show-password label{
+    cursor: pointer;
+    font-size: 14px;
+    margin-top:-2px;
+}
+.forgot-password a{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+.login-form-container .form-footer,.signup-form-container .form-footer{
+    width: 100%;
+    height: fit-content;
+    padding:0px 20px;
+}
+.form-footer p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.form-footer p span{
+    margin:0px 10px;
+    margin-top: -10px;
+}
+form .form-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-button button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+button span{
+    color: white;
+    font-size: 16px;
+}
+.social-logins,.social-signups{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.social-login-button,.social-signup-button{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin:15px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+    height:50px;
+}
+.social-login-button button,.social-signup-button button{
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background:transparent;
+    justify-content:space-around;
+}
+button .social-login-icon,button .social-signup-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+button .social-login-icon img,button .social-signup-icon img{
+    height:100%;
+    width: 40px;
+    object-fit: fill;
+}
+.social-login-text, .social-signup-text{
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 0px;
+}
+.social-login-text span, .social-signup-text span{
+    font-size: 18px;
+    color: rgb(0,0,0,0.7);
+    text-align: center;
+}
+.form-footer .navigatelink{
+    text-align: center;
+    font-size: 14px;
+}
+.navigatelink a{
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column; /* Switch to column for small screens */
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+    }
+
+    /* Optionally hide images on small screens if desired */
+    .login-image-container, 
+    .signup-image-container {
+        display: none;
+    }
+
+    .login-form-container, 
+    .signup-form-container {
+        width: 350px;
+        border: none;
+    }
+}
